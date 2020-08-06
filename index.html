@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/vids/font_37uhxj5b5fn/iconfont.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner-video {
+            padding: 180px 0 120px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            min-height: 800px;
+
+        }
+
+
+        .banner-video::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .4);
+            z-index: -1;
+            transition: background-color .3s;
+            box-sizing: border-box;
+
+        }
+
+        #myvideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .slider-prev {
+            left: 30px;
+            right: auto;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            top: 50%;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            z-index: 1;
+            overflow: hidden;
+            font-weight: 900;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+
+            font-family: "Font Awsome 5 Free";
+
+
+        }
+
+        .slider-prev:hover {
+            transition-delay: .1s;
+            background-color: #85B72C;
+            border-color: #85B72C;
+            color: #fff;
+
+
+        }
+
+        .slider-prev::before,
+        .slider-prev-right::before,
+            {
+            content: '';
+
+        }
+
+        .slider-prev::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            translate: .3s;
+            background-color: #85b72c;
+            z-index: -1;
+            border-radius: 50%;
+
+        }
+
+        .slider-prev-right::after {
+
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #85B72C;
+            z-index: -1;
+            border-radius: 50%;
+            transform: scale(0);
+
+
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 960px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+        .bannerslider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            user-select: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .bannerslider-slick {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+
+        }
+
+        .slick-list {
+            margin: 0 -15px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .slick-strack {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .banner-inner {
+            overflow: hidden;
+        }
+
+        .contentus {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            margin: 0 auto;
+            font-weight: 600;
+            padding: 0 33px;
+        }
+
+        .contentusbox {
+            margin: 0 431px;
+            width: 125px;
+            height: 50px;
+            background: #8cbe58;
+            border-radius: 5px;
+            line-height: 50px;
+        }
+
+        .section {
+            padding: 80px 0 50px;
+            position: relative;
+
+        }
+
+        .container1 {
+            margin: auto;
+            width: 960px;
+
+        }
+
+        .container1 ul {
+            width: 1140px;
+            height: 520px;
+        }
+
+        .rowchoice {
+            display: block;
+            width: 210px;
+            height: 230px;
+            background-color: #f7f4ee;
+            border-radius: 8px;
+        }
+
+        .rowchoice {
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-video">
+        <video autoplay muted loop id="myvideo">
+            <source src="assets/vids/video-banner.mp4" type="video/mp4">
+
+        </video>
+        <i class="slider-prev"><span class="iconfont icon-xiangzuojiantou"></span></i>
+        <div class="container">
+            <div class="bannerslider">
+                <div class="bannerslider-slick">
+                    <div class="slick-list">
+                        <div class="slick-track" style=" opacity:1;widows: 6720px; ">
+                            <div class="banner-inner">
+                                <h1 class="title textwhite" style="font-size: 62px;line-height: 80px; 
+color: #fff;margin: 0px auto 0 auto; text-align: center;
+                                " ;>在这里学习烹饪<span style="color: #85b72c;">艺术</span></h1>
+                                <h6 style="font-size: 18px;line-height: 80px; 
+                               color: #fff; text-align: center;">培根猪排里脊肉，香薰猪肉。</h6>
+                                <div class="contentusbox"> <a href="#" class="contentus">请联系我们</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <i class="slider-prev-right"><span class="iconfont icon-xiangzuojiantou"></span></i>
+
+    </div>
+    <div class="section">
+        <div class="container1">
+            <ul class="row">
+                <li class="rowchoice">
+                    <a href="#">
+                        <div>
+                            <i class="iconfont icon-canyinicon"></i>
+                            <h5>早餐</h5>
+                            <span>17个食谱</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
