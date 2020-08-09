@@ -1,0 +1,69 @@
+
+
+body {
+	font-size: 100px;
+	
+}
+
+footer {
+	background-color: #fff;
+	width: 100%;
+	background-color: #fff;
+	    position: fixed;
+	    z-index: 9999;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+		box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.footer-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 52px;
+	position: relative;
+}
+
+.footer-div>a {
+	display: inline-block;
+	/* height: .52rem; */
+	flex: 1 1 auto;
+	padding: 0 auto .1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+}
+
+.footer-div>a img{
+	    display: block;
+	    width: .4rem;
+	    height: .4rem;
+	    margin: 0 auto .1rem;
+		position: absolute;
+		top:-.1rem
+}
+
+.footer-div>a {
+	
+	font-size: .22rem;
+	color:  #999;
+	text-decoration: none;
+}
+
+.footer-div>a span {
+	margin-top: .4rem;
+}
+
+.footer-div>a:hover 
+{
+	color: orangered;
+	    outline-width: 0;
+}
+
+.icon1::after {
+	background: url(xiaomimovie-img/mi-home-orange.png) ;
+	background-size: .4rem .4rem;
+}
+

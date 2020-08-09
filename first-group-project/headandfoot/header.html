@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Cookiteer - Food Blog HTML Template</title>
+		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="header-app.css" />
+		<link rel="stylesheet" href="fonts/flaticon/flaticon.css" />
+		<link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+		<script src="./footer.js"></script>
+		<!-- <link rel="icon" type="image/png" href="" /> -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-nav">
+				<a class="nav-img" href="javascript:void()">
+					<img src="./img/logo.png" />
+				</a>
+				<ul class="nav-text">
+					<li>
+						<a href="#">Home Pages</a>
+						<ul class="nav-concell">
+							<li><a href="#">Home v1</a></li>
+							<li><a href="#">Home v2</a></li>
+							<li><a href="#">Home v3</a></li>
+							<li><a href="#">Home v4</a></li>
+							<li><a href="#">Home v5</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+						<ul class="nav-concell special-nav">
+							<li>
+								<a href="#">Blog Archive</a>
+								<ul class="special-nav-concell">
+									<li><a href="#">Grid View</a></li>
+									<li><a href="#">List View</a></li>
+									<li><a href="#">Masonry</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">Blog Single</a>
+								<ul class="special-nav-concell">
+									<li><a href="#">Blog Single v1</a></li>
+									<li><a href="#">Blog Single v2</a></li>
+									<li><a href="#">Blog Single v3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Pages</a>
+						<ul class="nav-concell">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Checkout</a></li>
+							<li><a href="#">Cart</a></li>
+							<li><a href="#">Product Details</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Recipes</a>
+						<ul class="nav-concell">
+							<li><a href="#">Recipe Archive</a></li>
+							<li><a href="#">Recipe Details</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Shop</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+				<div class="nav-icon">
+					<ul>
+						<li><i class="flaticon-shopping-basket"></i></li>
+						<li><i class="flaticon-magnifying-glass"></i></li>
+					</ul>
+					<div id="app-nav" onclick="openappnav()"> ≡</div>
+				</div>  
+		</header>
+		<aside class="app-nav-aside">
+			<a><img src="img/logo.png"/></a>
+			<ul>
+				<li>
+					<a>Home Pages</a>
+				<ul class="drop-down-list">
+					<li><a href="#">Home v1</a></li>
+					<li><a href="#">Home v2</a></li>
+					<li><a href="#">Home v3</a></li>
+					<li><a href="#">Home v4</a></li>
+					<li><a href="#">Home v5</a></li>
+				</ul>
+				</li>
+				<li>
+					<a>Blog</a>
+					<ul class="drop-down-list special-list">
+						<li>
+							<a href="#">Blog Archive</a>
+							<ul class="drop-down-list Blog-list">
+								<li><a href="#">Grid View</a></li>
+								<li><a href="#">List View</a></li>
+								<li><a href="#">Masonry</a></li>
+					
+							</ul>
+						</li>
+						<li>
+							<a href="#">Blog Single</a>
+							<ul class="drop-down-list Blog-list">
+								<li><a href="#">Blog Single v1</a></li>
+								<li><a href="#">Blog Single v2</a></li>
+								<li><a href="#">Blog Single v3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a>Pages</a></li>
+				<li><a>Recipes</a></li>
+				<li><a>Shop</a></li>
+				<li><a>Contact Us</a></li>
+			</ul>
+		</aside>
+		<div class="aside-overlay" onclick="closeappnav()"></div>
+		
+		<div class="img"></div>
+		
+	<!-- 	<script>
+			
+			function openappnav() {
+			    document.getElementsByClassName("aside-overlay").style.display = "block";
+				document.getElementsByClassName("app-nav-aside").style.display = "block";
+			}
+			
+			function closeappnav() {
+			    document.getElementsByClassName("aside-overlay").style.display = "none";
+			    document.getElementsByClassName("app-nav-aside").style.display = "none";
+			}
+		</script> -->
+	</body>
+</html>

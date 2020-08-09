@@ -1,0 +1,16 @@
+body {
+	font-size: 100px;
+}
+
+.swipe-wrapper {
+	    position: relative;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 1;
+		box-sizing: content-box;
+}
+.swipe-a>img {
+	width: 7.2rem;
+	height: 3.6rem;
+	background-color: yellow;
+}
